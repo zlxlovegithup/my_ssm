@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+        <!-- 禁止访问页面的配置 -->
+        <error-page>
+            <error-code>403</error-code>
+            <location>/403.jsp</location>
+        </error-page>
+        <!-- 配置springmvc的核心控制器 -->
+        <servlet>
+          <servlet-name>dispatcherServlet</servlet-name>
+          <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+          <!--配置初始化参数，用于指定springmvc的位置-->
+          <init-param>
+            <param-name>contextConfigLocation</param-name>
+            <param-value>classpath:springmvc.xml</param-value>
+          </init-param>
+          <!--配置Servlet的对象的创建时间点:应用加载时创建。取值只能为非0的正整数表示加载的顺序-->
+          <load-on-startup>1</load-on-startup>
+        </servlet>
+        <servlet-mapping>
+          <servlet-name>dispatcherServlet</servlet-name>
+          <url-pattern>/</url-pattern>
+        </servlet-mapping>
+
+        <!-- 配置springmvc的编码过滤器:处理中文乱码问题 -->
+        <filter>
+          <filter-name>characterEncodingFilter</filter-name>
+          <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+          <!-- 设置过滤器中的属性值-->
+          <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+          </init-param>
+          <!--启动编码过滤器-->
+          <init-param>
+            <param-name>forceEncoding</param-name>
+            <param-value>true</param-value>
+          </init-param>
+        </filter>
+        <!-- 所有的请求都需要被过滤 -->
+        <filter-mapping>
+          <filter-name>characterEncodingFilter</filter-name>
+          <!-- /* -->
+          <url-pattern>*.do</url-pattern>
+        </filter-mapping>
+
+        <!--增加springsecurity作为登录认证授权框架-->
+        <filter>
+            <filter-name>springSecurityFilterChain</filter-name>
+            <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+        </filter>
+        <filter-mapping>
+            <filter-name>springSecurityFilterChain</filter-name>
+            <url-pattern>/*</url-pattern>
+        </filter-mapping>
+        <!-- Spring与SpringMvc的整合 -->
+        <!-- 配置Spring与Mybatis整合的配置文件的路径-->
+        <!-- 配置SpringSecurity的配置文件的路径 -->
+        <context-param>
+          <param-name>contextConfigLocation</param-name>
+          <param-value>classpath*:applicationContext.xml,classpath*:spring-security.xml</param-value>
+        </context-param>
+
+        <!--配置SpringSecurity的监听器-->
+        <!-- 配置监听器 -->
+        <listener>
+          <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+        </listener>
+
+        <!-- 配置RequestContextListener -->
+        <listener>
+            <listener-class>org.springframework.web.context.request.RequestContextListener</listener-class>
+        </listener>
+
+        <!-- 指定默认加载的页面 -->
+        <welcome-file-list>
+          <welcome-file>index.html</welcome-file>
+          <welcome-file>index.htm</welcome-file>
+          <welcome-file>index.jsp</welcome-file>
+          <welcome-file>default.html</welcome-file>
+          <welcome-file>default.htm</welcome-file>
+          <welcome-file>default.jsp</welcome-file>
+        </welcome-file-list>
+</web-app>

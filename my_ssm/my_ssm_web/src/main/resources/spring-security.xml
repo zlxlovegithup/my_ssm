@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:security="http://www.springframework.org/schema/security"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/security
+    http://www.springframework.org/schema/security/spring-security.xsd">
+
+    <!--配置不过滤的资源(静态资源以及登录相关)-->
+    <security:http security="none" pattern="/login.jsp"/>
+    <security:http security="none" pattern="/failer.jsp"/>
+    <security:http security="none" pattern="/index.jsp"/>
+    <security:http security="none" pattern="/css/**"/>
+    <security:http security="none" pattern="/image/**"/>
+    <security:http security="none" pattern="/plugins/**"/>
+
+    <!-- 开启JSR250注解的使用 -->
+    <!-- 开启Spring-Security注解的使用-->
+    <!-- 开启支持表达式的注解 -->
+    <security:http auto-config="true" use-expressions="true">
+        <!-- intercept-url定义了一个过滤规则:pattern表示对哪些url进行权限控制,access属性表示在请求对应的URL时需要什么权限
+                默认它是一个以逗号分隔的角色列表，请求的用户只需要拥有其中的一个角色就能成功访问对应的URL-->
+        <!-- 配置权限拦截，访问所有url，都需要用户登录，且拥有ROLE_USER或者是ROLE_ADMIN角色 -->
+        <!-- 如果想要使用pre-post-annotations="enabled"(支持表达式的注解) 则需要加上hasAnyRole() -->
+        <security:intercept-url pattern="/**" access="hasAnyRole('ROLE_USER','ROLE_ADMIN','ROLE_STUDENT','ROLE_TEACHER')"/>
+        <!--        <security:intercept-url pattern="/**" access="ROLE_USER,ROLE_ADMIN,ROLE_STUDENT,ROLE_TEACHER)"/>-->
+        <!-- 自定义登录页面:login-page自定义登录页面
+                          login-processing-url 登录请求拦截的url,也就是form表单提交时指定的action
+                          authentication-failure-url用户验证失败之后才会登录的页面
+                          default-target-url默认跳转的页面
+                          authentication-success-forward-url用户验证成功跳转的页面
+                          username-parameter 用户名的请求字段 默认为username
+                          password-parameter 密码的请求字段 默认为password
+                          注意：
+                              登录页面用户名固定username
+                              登录页面密码固定password
+
+                          参数拓展:
+                                always-use-default-target 是否总是使用默认的登录成功后跳转url
+                                authentication-success-handler-ref 指向一个AuthenticationSuccessHandler用于处理认证成功的请求,不能和default-target-url还有always-use-default-target同时使用
+                                用于authentication-failure-handler-ref
+                                authentication-failure-handler-ref 指向一个AuthenticationFailureHandler用于处理失败的认证请求
+                                authentication-failure-forward-url 用于authentication-failure-handler-ref
+                                authentication-details-source-ref 指向一个AuthenticationDetailsSource,在认证过滤器中使用
+                                -->
+        <security:form-login login-page="/login.jsp"
+                             username-parameter="username"
+                             password-parameter="password"
+                             login-processing-url="/login.do"
+                             authentication-failure-url="/failer.jsp"
+                             default-target-url="/index.jsp"
+                             authentication-success-forward-url="/pages/main.jsp"/>
+        <!--    invalidate-session 是否删除session
+                logout-url 退出登录处理链接  LogoutFilter要读取的url,也就是指定spring security拦截的注销url
+                logout-success-url 登出成功页面  即： 用户退出后要被重定向的url
+                注意：
+                    退出登录操作：只需要链接到logout即可登出当前用户
+         -->
+        <security:logout invalidate-session="true" logout-url="/logout.do" logout-success-url="/login.jsp"/>
+
+        <!-- 关闭CSRF(跨域请求) 默认是开启的 -->
+        <security:csrf disabled="true"/>
+    </security:http>
+
+    <!-- use-expressions:Spring 表达式语言配置访问控制 -->
+    <!-- auto-config="true"不使用自己编写的登录页面 框架默认提供登录页面
+          use-expressions="false" 是否使用SPEL表达式-->
+    <security:global-method-security jsr250-annotations="enabled" secured-annotations="enabled" pre-post-annotations="enabled"/>
+
+    <!-- 切换成数据库中的用户名和密码 -->
+    <security:authentication-manager>
+        <security:authentication-provider user-service-ref="userService">
+            <!-- 配置加密的方式
+            <security:password-encoder ref="passwordEncoder"/>-->
+        </security:authentication-provider>
+    </security:authentication-manager>
+
+    <!-- 配置加密类 -->
+<!--    <bean id="passwordEncoder" class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder"/>-->
+
+    <!-- 提供了入门的方式，在内存中存入用户名和密码 -->
+    <!--<security:authentication-manager>
+            <security:authentication-provider>
+                <security:user-service>
+                    &lt;!&ndash; 配置默认用户，用户名：admin 密码(加密)：user 拥有权限：ROLE_USER &ndash;&gt;
+                    <security:user name="user" password="{noop}user" authorities="ROLE_USER"/>
+                    &lt;!&ndash; 配置管理员用户，用户名：admin 密码(加密)：admin 拥有权限：ROLE_ADMIN &ndash;&gt;
+                    <security:user name="admin" password="{noop}admin" authorities="ROLE_ADMIN"/>
+                </security:user-service>
+            </security:authentication-provider>
+        </security:authentication-manager>-->
+</beans>

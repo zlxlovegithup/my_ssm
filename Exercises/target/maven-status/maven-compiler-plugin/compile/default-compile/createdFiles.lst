@@ -1,0 +1,6 @@
+com\zlx\domain\Customer.class
+com\zlx\service\ICustomerService.class
+com\zlx\controller\ItemsController.class
+com\zlx\controller\CustomerController.class
+com\zlx\service\impl\CustomerServiceImpl.class
+com\zlx\dao\ICustomerDao.class
