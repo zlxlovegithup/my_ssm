@@ -6,7 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e0c52f2-950b-4baf-ad13-ec1b8c30b6e3" name="Default Changelist" comment="新建了一个项目my_ssm" />
+    <list default="true" id="9e0c52f2-950b-4baf-ad13-ec1b8c30b6e3" name="Default Changelist" comment="新建了一个项目my_ssm">
+      <change beforePath="$PROJECT_DIR$/my_ssm.iws" beforeDir="false" afterPath="$PROJECT_DIR$/my_ssm.iws" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/my_ssm_dao/target/" />
@@ -160,7 +162,7 @@
     <option name="jreName" value="1.8" />
     <option name="vmOptions" value="-DarchetypeCatalog=internal" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="216" />
     <option name="y" value="32" />
     <option name="width" value="1037" />
@@ -355,12 +357,12 @@
       <workItem from="1576653927271" duration="1196000" />
       <workItem from="1576657134232" duration="9000" />
       <workItem from="1576805133391" duration="119000" />
-      <workItem from="1576809738077" duration="2595000" />
+      <workItem from="1576809738077" duration="2973000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="185209000" />
+    <option name="totallyTimeSpent" value="185593000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -380,7 +382,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.051107325" />
+      <window_info anchor="bottom" id="Application Servers" order="7" visible="true" weight="0.051194537" />
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32879046" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
@@ -463,19 +465,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my_ssm_web/src/main/resources/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-105">
-          <caret line="19" column="63" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="63" />
-          <folding>
-            <element signature="e#1427#1443#0" expanded="true" />
-            <element signature="e#1485#1498#0" expanded="true" />
-            <element signature="e#1537#1555#0" expanded="true" />
-            <element signature="e#1598#1616#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/my_ssm_web/src/main/resources/applicationContext.xml" />
     <entry file="file://$PROJECT_DIR$/my_ssm_web/src/main/webapp/pages/user-add.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -668,16 +658,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my_ssm_web/src/main/java/com/zlx/my_ssm/controller/RoleController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="583">
-          <caret line="73" column="169" selection-start-line="73" selection-start-column="169" selection-end-line="73" selection-end-column="169" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/my_ssm_web/src/main/java/com/zlx/my_ssm/controller/RoleController.java" />
     <entry file="file://$PROJECT_DIR$/my_ssm_web/src/main/webapp/pages/role-permission-add.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="245">
@@ -706,13 +687,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my_ssm_web/src/main/resources/spring-security.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="20" column="59" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/my_ssm_web/src/main/resources/spring-security.xml" />
     <entry file="file://$PROJECT_DIR$/my_ssm_web/src/main/webapp/pages/header.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
@@ -734,30 +709,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my_ssm_web/src/main/java/com/zlx/my_ssm/controller/PermissionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7">
-          <caret line="23" column="52" lean-forward="true" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my_ssm_web/src/main/java/com/zlx/my_ssm/controller/ProductController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my_ssm_web/src/main/java/com/zlx/my_ssm/controller/OrdersController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="922">
-          <caret line="56" column="31" selection-start-line="56" selection-start-column="31" selection-end-line="56" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/my_ssm_web/src/main/java/com/zlx/my_ssm/controller/PermissionController.java" />
+    <entry file="file://$PROJECT_DIR$/my_ssm_web/src/main/java/com/zlx/my_ssm/controller/ProductController.java" />
+    <entry file="file://$PROJECT_DIR$/my_ssm_web/src/main/java/com/zlx/my_ssm/controller/OrdersController.java" />
     <entry file="file://$PROJECT_DIR$/my_ssm_dao/pom.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -771,13 +725,7 @@
     <entry file="file://$PROJECT_DIR$/my_ssm_utils/pom.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/my_ssm_web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="43" column="28" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/my_ssm_web/pom.xml" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
@@ -792,29 +740,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my_ssm_web/src/main/java/com/zlx/my_ssm/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="35" column="35" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/my_ssm_web/src/main/java/com/zlx/my_ssm/controller/UserController.java" />
     <entry file="file://$PROJECT_DIR$/my_ssm_web/src/main/webapp/pages/syslog-list.jsp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/my_ssm_web/src/main/java/com/zlx/my_ssm/controller/SysLogController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/my_ssm_web/src/main/java/com/zlx/my_ssm/controller/SysLogController.java" />
     <entry file="file://$PROJECT_DIR$/my_ssm_domain/src/main/java/com/zlx/my_ssm/domain/SysLog.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -856,16 +786,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my_ssm_web/src/main/java/com/zlx/my_ssm/controller/LogAop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="55" column="37" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/my_ssm_web/src/main/java/com/zlx/my_ssm/controller/LogAop.java" />
     <entry file="file://$PROJECT_DIR$/my_ssm_dao/src/main/java/com/zlx/my_ssm/dao/IMemberDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
