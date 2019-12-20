@@ -1,42 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c6560040-92e7-4eb6-ba9c-ef20c291d833" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/my_ssm.iws" beforeDir="false" afterPath="$PROJECT_DIR$/my_ssm.iws" afterDir="false" />
-    </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/my_ssm_domain/target/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <ignored path="$PROJECT_DIR$/my_ssm_web/target/" />
-    <ignored path="$PROJECT_DIR$/my_ssm_utils/target/" />
-    <ignored path="$PROJECT_DIR$/my_ssm_service/target/" />
-    <ignored path="$PROJECT_DIR$/my_ssm_dao/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="2821ba7e-cc89-41b8-9fdc-43df3f9a85e1" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1764" />
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
+    <leaf />
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="216" />
@@ -49,43 +21,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="my_ssm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my_ssm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="my_ssm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my_ssm" type="462c0819:PsiDirectoryNode" />
-              <item name="my_ssm_web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="my_ssm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my_ssm" type="462c0819:PsiDirectoryNode" />
-              <item name="my_ssm_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="my_ssm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my_ssm" type="462c0819:PsiDirectoryNode" />
-              <item name="my_ssm_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -103,22 +50,10 @@
     <configuration />
   </component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="c6560040-92e7-4eb6-ba9c-ef20c291d833" name="Default Changelist" comment="" />
-      <created>1576817806725</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1576817806725</updated>
-      <workItem from="1576817808332" duration="901000" />
-    </task>
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="901000" />
-  </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Image Layers" />
@@ -152,15 +87,5 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1764" />
-      </provider>
-    </entry>
   </component>
 </project>

@@ -1,4 +1,0 @@
-0:0:0:0:0:0:0:1 - - [13/Nov/2019:23:42:41 +0800] "GET /maven_day02_1/showDetails HTTP/1.1" 404 1001 http-bio-8080-exec-2 191
-0:0:0:0:0:0:0:1 - - [13/Nov/2019:23:42:41 +0800] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-3 0
-0:0:0:0:0:0:0:1 - - [13/Nov/2019:23:43:05 +0800] "GET /maven_day02_1/items/showDetails HTTP/1.1" 404 1041 http-bio-8080-exec-4 1905
-0:0:0:0:0:0:0:1 - - [13/Nov/2019:23:44:46 +0800] "GET /maven_day02_1/items/showDetails HTTP/1.1" 200 883 http-bio-8080-exec-2 1814
