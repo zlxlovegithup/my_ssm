@@ -1,0 +1,7 @@
+com\zlx\my_ssm\controller\UserController.class
+com\zlx\my_ssm\controller\LogAop.class
+com\zlx\my_ssm\controller\SysLogController.class
+com\zlx\my_ssm\controller\RoleController.class
+com\zlx\my_ssm\controller\OrdersController.class
+com\zlx\my_ssm\controller\ProductController.class
+com\zlx\my_ssm\controller\PermissionController.class
